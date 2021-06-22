@@ -1,0 +1,11 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/estilos.css") }}">
+</head>
+<form action = "{{ request.path }}" method = "post" class= "container">
+    <h1>Operador</h1>
+    <h3>{{ Nombre }}</h3>
+    <li> <a href = "{{ url_for('Finalizar') }}"> Finalizar un viaje</a></li><br>
+    <li> <a href = "{{ url_for('listar_viajes') }}"> Ver lista de viajes</a></li><br>
+    <li> <a href = "{{ url_for('AsignarUnMovil') }}" name = "PedirLista" placeholder = "PedirLista"> Tomar un viaje</a></li><br>
+</form>

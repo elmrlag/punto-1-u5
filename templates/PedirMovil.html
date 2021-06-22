@@ -1,0 +1,20 @@
+{% extends "base_template.html" %}
+{% block content %}
+<form action = "{{ request.path }}" method = "post" class= "container">  
+    <h1>Solicitar un móvil</h1>
+    <label for = "DireccionO">Direccion del origen</label><br>
+    <input type = "text" name = "DireccionO" placeholder = "Direccion del origen" /><br> 
+    <label for = "DireccionD">Direccion del destino</label><br>
+    <input type = "text" name = "DireccionD" placeholder = "Direccion del destino" /><br> 
+    <label for = "DNI">DNI</label><br>
+    <input type = "text" name = "DNI" placeholder = "DNI" /><br> 
+    <label for = "cPer">Cantidad de personas</label><br>
+    <input type = "text" name = "cPer" placeholder = "Cantidad de personas" /><br> 
+    <label for="lenguaje">Equipaje</label>
+			<select name="lenguaje">
+			  <option value="si">si</option>
+			  <option value="no">no</option>
+			</select>
+    <input type = "submit" value = "Registrar" />
+</form>
+    {% endblock %}

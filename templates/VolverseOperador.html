@@ -1,0 +1,9 @@
+{% extends "base_template.html" %}
+{% block content %}
+<form action = "{{ request.path }}" method = "post" class= "container">  
+    <h1>Volverse operador</h1>
+    <label for = "password">Ingrese su contraseña de operador</label><br>
+    <input type = "password" name = "password" placeholder = "password"/><br>
+    <input type = "submit" value = "Entrar" />
+</form>
+    {% endblock %}

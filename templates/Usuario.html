@@ -1,0 +1,11 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/estilos.css") }}">
+</head>
+<form action = "{{ request.path }}" method = "post" class= "container">  
+    <h1>Usuario</h1>
+    <h3>{{ Nombre }}</h3>
+    <li> <a href = "{{ url_for('PedirMovil') }}"> Solicitar un móvil</a></li><br>
+    <li> <a href = "{{ url_for('consultar_estado_movil') }}"> Consultar estado del movil</a></li><br>
+    <li> <a href = "{{ url_for('VolverseOperador') }}"> Modo Operador</a></li><br>
+</form>

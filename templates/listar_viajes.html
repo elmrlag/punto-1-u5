@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head></head>
+   <body>
+      <h3>Lista de viajes registrados:</h3>
+      <table>
+         <thead>
+            <tr>
+               <th>Origen</th>
+               <th>Destino</th>
+               <th>DNI Cliente</th>
+               <th>Número Móvil</th>
+            </tr>
+         </thead>
+         <tbody>
+            {% for viaje in viajes %}
+               <tr>                  
+                  <td>{{ viaje.origen }}</td>
+                  <td>{{ viaje.destino }}</td>
+                  <td>{{ viaje.dniCliente }}</td>
+                  <td>{{ viaje.numMovil }}</td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+	  <br><a href = "{{ url_for('inicio') }}">Volver</a>
+   </body>
+</html>

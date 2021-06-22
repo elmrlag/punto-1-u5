@@ -1,0 +1,20 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for("static", filename="css/estilos.css") }}">
+</head>
+    <form action = "{{ request.path }}" method = "post" class = "container">
+        <br> 
+        <br> 
+        <label for="qweasd">Pedidos</label><br> 
+        <select name="Pedidos">
+          {% for Viaje in viajes %}
+            <option value={{ Viaje.id }} >Origen: {{ Viaje.origen }} Destino: {{ Viaje.destino }}</option>
+          {% endfor %}
+        </select>
+        <br> 
+        <label for = "Duracion">Duracion</label><br>
+        <input type = "text" name = "Duracion" placeholder = "Numero de movil" /><br> 
+        <br>
+          <input type = "submit" value = "Guardar" />
+        <br><a href = "{{ url_for('inicio') }}"> Inicio </a>
+    </form>

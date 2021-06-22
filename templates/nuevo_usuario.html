@@ -1,0 +1,17 @@
+{% extends "base_template.html" %}
+{% block title %}Crear Usuario{% endblock %}
+{% block content %}
+      <hr/>        
+      <form action = "{{ request.path }}" method = "post" class = "container">
+        <h3>Registrar usuario</h3>
+        <label for = "Documento">Documento</label><br>
+        <input type = "text" name = "dni" placeholder = "Documento" /><br>
+        <label for = "nombre">Nombre</label><br>
+        <input type = "text" name = "nombre" placeholder = "Nombre" /><br>
+        <label for = "Contraseña">Contraseña</label><br>
+        <input type = "password" name = "clave" placeholder = "Contraseña"/><br>
+        <br>
+        <input type = "submit" value = "Registrar" />
+      </form>
+{% endblock %}
+

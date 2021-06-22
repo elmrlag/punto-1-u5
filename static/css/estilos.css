@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(212, 55, 55);
+  background-color: #F6F7EB;
+}
+
+header {
+  background-color: #DFB887;
+  height: 10%;
+  width: 100%;
+  opacity: .9;
+  margin-bottom: 2%;
+}
+
+h1 { 
+	font-family: serif; 
+	text-align: center;
+	color: #000000; 
+}
+tr{
+  margin: 0 auto; 
+  color: #000000;
+}
+tbody {
+  margin: 0 auto; 
+  color: #000000; 
+}
+h2 {
+  font-size: 3em;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+h3 {
+  font-size: 1.5em;
+  font-family: serif; 
+	text-align: center;
+	color: rgb(0, 0, 0); 
+}
+p {
+	margin-left: 2em; 
+	color: #123A42;
+}
+
+ul {
+  text-align:center;
+  list-style-type: none;
+  margin: 0 auto;
+  margin-top: 15%; 
+  padding: 0;
+  width: 50%;
+  background-color: #E94F37;
+  border-radius: 15px;
+  border-left: #e0341a 5px solid;
+  border-bottom: #e0341a 5px solid;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #393E41;
+  color: white;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-left: 2em; 
+}
+th, td {
+  padding: 5px;
+}
+.container {
+  text-align:center;
+  list-style-type: none;
+  margin: 0 auto;
+  margin-top: 10%; 
+  padding: 0;
+  width: 50%;
+  background-color: #E94F37;
+  border-radius: 15px;
+  border-left: #e0341a 5px solid;
+  border-bottom: #e0341a 5px solid;
+}
+
+.container label { 
+	font-weight: bold; 
+	margin-bottom: 2em; 
+	margin-right: 0 auto; 
+	color: #000000;
+}
+.container input { 
+	margin-bottom: 2em; 
+	margin-right: 0 auto; 
+}
+.container button {
+	margin-bottom: 2em; 
+	margin-right: 0 auto; 
+} 
+.container textarea { 
+	min-height: 12em; 
+	resize: vertical; 
+	margin-right: 0 auto; 
+}
+.container select { 
+	margin-bottom: 1em; 
+	margin-right: 0 auto; 
+}
+.menu {
+  float: right;
+  margin-top: 8px;
+}
+.menu li {
+  display: inline;
+}
+.menu li + li {
+  margin-left: 35px;
+}
+.menu li a {
+  color: #444;
+  text-decoration: none;
+}
+.myDiv {
+  margin-bottom: 2em; 
+	margin: 0 auto;
+  text-align: center;
+}

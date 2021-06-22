@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head></head>
+   <body>
+      <h3>Lista de viajes asociados:</h3>
+      <table>
+         <thead>
+            <tr>
+               <th>Numero movil</th>
+               <th>Tiempo de espera</th>
+            </tr>
+         </thead>
+         <tbody>
+            {% for viaje in lista %}
+               <tr>                  
+                  <td>{{ viaje.numMovil }}</td>
+                  <td>{{ viaje.demora }}</td>
+                  <td></td>
+               </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+	  <br><a href = "{{ url_for('inicio') }}">Volver</a>
+   </body>
+</html>

@@ -1,0 +1,13 @@
+{% extends "base_template.html" %}
+{% block title %}Bienvenida{% endblock %}
+{% block content %}
+		
+    <form action = "{{ request.path }}" method = "post" class= "container">  
+        <h3>Ingresar</h3>
+        <hr/> 
+        <label for = "Documento">Documento</label><br>
+        <input type = "text" name = "dni" placeholder = "Documento" /><br> 	
+        <input type = "submit" value = "Ingresar" />
+    </form>	 
+		
+ {% endblock %}
